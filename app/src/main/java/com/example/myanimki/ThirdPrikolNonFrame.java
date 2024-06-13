@@ -31,6 +31,12 @@ public class ThirdPrikolNonFrame extends AppCompatActivity {
 
         Animation blinkAnimation = AnimationUtils.loadAnimation(this, R.anim.blink_animation);
 
+        Animation scale = AnimationUtils.loadAnimation(this, R.anim.scale);
+
+        imgAnim.startAnimation(scale);
+        startBtn.startAnimation(scale);
+        pauseBtn.startAnimation(scale);
+
         startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
